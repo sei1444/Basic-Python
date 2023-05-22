@@ -3,5 +3,9 @@ text = """
     quantum mechanics. All of thy geometry, Herr Planck, is fairly hard.
 """
 
-# TODO
+text_change = text.translate(str.maketrans({",":" ", ".":" "}))
+
+word_list = text_change.split()
+
+print(list(map(len, word_list)))
 
