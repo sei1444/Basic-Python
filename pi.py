@@ -7,5 +7,11 @@ text_change = text.translate(str.maketrans({",":" ", ".":" "}))
 
 word_list = text_change.split()
 
-print(list(map(len, word_list)))
+len_list = list(map(len, word_list))
 
+ans = ''
+
+for i in len_list:
+    ans += str(i)
+
+print(ans)
