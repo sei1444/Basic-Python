@@ -4,8 +4,7 @@ b = int(input("b の値を入力: "))
 r = a % b
 
 while (r > 0):
-    a = b
-    b = r
+    a,b = b,r
     r = a % b
 
 print(b)
